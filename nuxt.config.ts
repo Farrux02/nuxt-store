@@ -20,6 +20,6 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: 'netlify'
+    preset: process.env.NETLIFY ? 'netlify' : 'node'
   }
 });
