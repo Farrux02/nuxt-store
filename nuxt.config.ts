@@ -20,6 +20,10 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: process.env.NETLIFY ? 'netlify' : 'node'
-  }
+    preset: process.env.NETLIFY ? "netlify" : "node",
+  },
+  app: {
+    baseURL: "/",
+  },
+  ssr: false
 });
