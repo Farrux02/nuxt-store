@@ -1,0 +1,22 @@
+{
+  "labels": {
+    "fav": "Sevimlilar",
+    "category": "Kategoriyalar",
+    "category_description": "Siz xaridorga kerak bo'lgan barcha kategoriyalarni topishingiz mumkin",
+    "ads": "E'lonlar",
+    "ads_description": "Siz xaridorga kerak bo'lgan barcha kategoriyalarni topishingiz mumkin",
+    "ads_board": "E'lonlar taxtasi",
+    "use_terms": "Foydalanish shartlari",
+    "welcome": "Xush kelibsiz!",
+    "login_info": "Sistemani ishlatish uchun sistemaga kiring",
+    "login": "Login",
+    "password": "Parol"
+  },
+  "actions": {
+    "load_more": "Yana ko'proq yuklash",
+    "login": "Kirish",
+    "search": "Qidirish",
+    "type_login": "Login yozing",
+    "type_pass": "Parol yozing"
+  }
+}
