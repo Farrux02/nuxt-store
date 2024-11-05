@@ -19,4 +19,7 @@ export default defineNuxtConfig({
       collections: ["tabler"],
     },
   },
+  nitro: {
+    preset: 'netlify'
+  }
 });
