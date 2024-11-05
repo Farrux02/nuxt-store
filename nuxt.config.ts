@@ -21,9 +21,14 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: process.env.NETLIFY ? "netlify" : "node",
+    externals: {
+      inline: [
+        "nitropack/dist/presets/netlify/legacy/runtime/_deno-env-polyfill",
+      ],
+    },
   },
   app: {
     baseURL: "/",
   },
-  ssr: false
+  ssr: false,
 });
