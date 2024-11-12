@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   modules: [
     "@nuxtjs/tailwindcss",
@@ -20,12 +19,7 @@ export default defineNuxtConfig({
     },
   },
   nitro: {
-    preset: process.env.NETLIFY ? "netlify" : "node",
-    externals: {
-      inline: [
-        "nitropack/dist/presets/netlify/legacy/runtime/_deno-env-polyfill",
-      ],
-    },
+    preset: process.env.NETLIFY ? "netlify" : process.env.VERCEL ? "vercel" : "node"
   },
   app: {
     baseURL: "/",
@@ -97,5 +91,5 @@ export default defineNuxtConfig({
       ],
     },
   },
-  ssr: false,
+  ssr: true,
 });
